@@ -1,8 +1,6 @@
 import path from "path";
 import * as url from "url";
 
-declare const __static:string;
-
 const isDevelopment = process.env.NODE_ENV !== "production";
 
 // see https://github.com/electron-userland/electron-webpack/issues/241#issuecomment-582920906
