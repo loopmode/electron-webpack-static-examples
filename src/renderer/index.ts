@@ -1,10 +1,10 @@
 import getStatic from "./utils/getStatic";
  
-let linkElt = document.createElement("link");
-linkElt.setAttribute("rel", "stylesheet");
-linkElt.setAttribute("type", "text/css");
-linkElt.setAttribute("href", getStatic("theme.css"));
-document.head.appendChild(linkElt);
+const staticStylesheet = document.createElement("link");
+staticStylesheet.setAttribute("rel", "stylesheet");
+staticStylesheet.setAttribute("type", "text/css");
+staticStylesheet.setAttribute("href", getStatic("theme.css"));
+document.head.appendChild(staticStylesheet);
 
 document.write(`<h1>${require('../../package.json').name}</h1>`)
 document.write(`<img class="logo" src="${getStatic('electron.png')}" />`)
