@@ -1,5 +1,7 @@
-/* we're already inside the static folder, so we can use relative paths as usual */
-@import './fonts/roboto-fontfacekit/stylesheet.css';
+/* we're already inside the static folder, so we can use relative paths as usual for imports */
+
+/* several font files, configured and grouped together in their own stylesheet. Should work with all tags and variants (<i>, <b>, <small> etc) */
+@import "./fonts/roboto-fontfacekit/stylesheet.css";
 
 body {
   color: white;
@@ -8,7 +10,20 @@ body {
   font-family: Roboto;
 }
 
-.logo {
-  width: 256px;
-  height: 256px;
+/* An additional single font file for the headings */
+@font-face {
+  font-family: Caveat;
+  src: url("./fonts/caveat-regular-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Caveat;
 }

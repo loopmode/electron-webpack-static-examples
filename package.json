@@ -1,5 +1,6 @@
 {
   "name": "electron-webpack-static-examples",
+  "description": "Examples of embedded static assets in an electron-webpack application",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {

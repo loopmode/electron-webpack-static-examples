@@ -1,3 +1,12 @@
+.logo {
+  width: 128px;
+  height: 128px;
+}
+
+/* 
+ * Examples for referencing a static file from inside a bundled stylesheet.
+ * Note the usage of ~/static - it's only possible because we defined an alias "static" in webpack.renderer.js.
+ */
 @font-face {
   font-family: NotoMono;
   src: url("~static/fonts/NotoMono-Regular-webfont.woff") format("woff");
@@ -6,9 +15,11 @@
   font-stretch: normal;
 }
 
+
 code {
-  font-family: NotoMono;
   background: url("~static/carbon_fibre.png");
+  font-family: NotoMono;
+  font-size: small;
   padding: 5px;
   border-radius: 5px;
   box-shadow: inset 0 0 10px #000000;
