@@ -1,8 +1,9 @@
-# electron-webpack-static-css
+# electron-webpack-static-examples
 
 Minimal example of how to include a static css file.
 
-See https://github.com/electron-userland/electron-webpack/issues/397
+- https://github.com/electron-userland/electron-webpack/issues/397
+- https://github.com/electron-userland/electron-webpack/issues/241
 
 
 # electron-webpack-quick-start
