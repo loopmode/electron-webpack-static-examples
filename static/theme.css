@@ -1,8 +1,11 @@
+/* we're already inside the static folder, so we can use relative paths as usual */
+@import './fonts/roboto-fontfacekit/stylesheet.css';
+
 body {
   color: white;
   background-color: darkslategray;
   text-align: center;
-  font-family: arial;
+  font-family: Roboto;
 }
 
 .logo {

@@ -1,0 +1,137 @@
+/* see https://github.com/loopmode/react-desktop/tree/master/static/fonts */
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-Black-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-BlackItalic-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-Bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("RobotoCondensed-Bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("RobotoCondensed-BoldItalic-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-BoldItalic-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("RobotoCondensed-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("RobotoCondensed-Italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-Italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-Light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("RobotoCondensed-Light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("RobotoCondensed-LightItalic-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-LightItalic-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-Medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-MediumItalic-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-Thin-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-ThinItalic-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
