@@ -8,5 +8,5 @@ linkElt.setAttribute("type", "text/css");
 linkElt.setAttribute("href", cssPath);
 document.head.appendChild(linkElt);
 
-document.write('<h1>electron-webpack-static-css</h1>')
+document.write(`<h1>${require('../../package.json').name}</h1>`)
 document.write(`<div>css path: ${cssPath}</div>`)
