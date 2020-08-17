@@ -4,7 +4,7 @@ Examples of how to include static files in electron webpack.
 
 ## `getStatic` utility
 
-You'll always need a utility function that returns a URL during development, but a file path in production. Check [`src/renderer/utils/getStatic`](./src/renderer/utils/getStatic) for that.
+You'll always need a utility function that returns a URL during development, but a file path in production. Check [`src/renderer/utils/getStatic.ts`](./src/renderer/utils/getStatic.ts) for that.
 
 If you use TypeScript, make sure to declare the magic `__static` global provided by electron-webpack. Check [`src/globals.d.ts`](./src/globals.d.ts) for that.
 
