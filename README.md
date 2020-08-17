@@ -1,6 +1,8 @@
 # electron-webpack-static-examples
 
-Examples of how to include static files in electron webpack.
+Examples of how to include static files in [electron-webpack](https://github.com/electron-userland/electron-webpack).
+
+These examples cover some details that are not explained (yet) in [the docs](https://webpack.electron.build/using-static-assets), like that you need to distinguish between development and production env, or how to get the paths working in css/scss stylesheets.
 
 ## `getStatic` utility
 
