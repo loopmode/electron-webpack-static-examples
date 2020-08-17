@@ -56,6 +56,21 @@ And inside the font's `stylesheet.css`, we can keep using relative paths and ref
 
 The same goes for background images or any other asset you can include from inside a static stylesheet.
 
+## Bundled stylesheets
+
+If you need to access static resources fron non-static stylesheets, that is from any stylesheets bundled via webpack (css/scss/less etc), you'll need to provide additional configuration to make it work.
+
+The trick is to provide a webpack alias that points to the static folder, then use that alias inside the stylesheets to reference your files.
+
+Have a look at this commit: https://github.com/loopmode/electron-webpack-static-examples/commit/131c5e4d18fa9985dab762dd8624a847babf5f98
+
+It adds
+
+- webpack alias configuration
+- stylesheet that is bundled via webpack
+    - reference to static font via `~static` alias
+    - reference to static background image via `~static` alias
+
 # electron-webpack-quick-start
 > A bare minimum project structure to get started developing with [`electron-webpack`](https://github.com/electron-userland/electron-webpack).
 
