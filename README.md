@@ -1,22 +1,17 @@
 # electron-webpack-static-examples
 
-Examples of how to include static files
-
-- https://github.com/electron-userland/electron-webpack/issues/397
-- https://github.com/electron-userland/electron-webpack/issues/241
-
+Examples of how to include static files in electron webpack.
 
 ## `getStatic` utility
 
-You'll always need a utility function that returns a URL during development, but a file path in production. Check `src/renderer/utils/getStatic` for that.
+You'll always need a utility function that returns a URL during development, but a file path in production. Check [`src/renderer/utils/getStatic`](./src/renderer/utils/getStatic) for that.
 
-If you use TypeScript, make sure to declare the magic `__static` global provided by electron-webpack. Check `src/globals.d.ts` for that.
+If you use TypeScript, make sure to declare the magic `__static` global provided by electron-webpack. Check [`src/globals.d.ts`](./src/globals.d.ts) for that.
 
 When referring to static assets from within bundled code, use the helper function to retrieve the asset path.
 
 ```javascript
-
-document.write(`<img class="logo" src="${getStatic('electron.png')}" />`)
+document.write(`<img class="logo" src="${getStatic("electron.png")}" />`);
 
 const theme = document.createElement("link");
 theme.setAttribute("rel", "stylesheet");
@@ -39,7 +34,7 @@ Inside `static/theme.css` we import the file `static/fonts/roboto-fontfacekit/st
 
 ```css
 /* we're already inside the static folder, so we can use relative paths as usual */
-@import './fonts/roboto-fontfacekit/stylesheet.css';
+@import "./fonts/roboto-fontfacekit/stylesheet.css";
 ```
 
 And inside the font's `stylesheet.css`, we can keep using relative paths and reference each font file:
@@ -68,22 +63,24 @@ It adds
 
 - webpack alias configuration
 - stylesheet that is bundled via webpack
-    - reference to static font via `~static` alias
-    - reference to static background image via `~static` alias
+  - reference to static font via `~static` alias
+  - reference to static background image via `~static` alias
 
 # electron-webpack-quick-start
+
 > A bare minimum project structure to get started developing with [`electron-webpack`](https://github.com/electron-userland/electron-webpack).
 
 Thanks to the power of `electron-webpack` this template comes packed with...
 
-* Use of [`webpack-dev-server`](https://github.com/webpack/webpack-dev-server) for development
-* HMR for both `renderer` and `main` processes
-* Use of [`babel-preset-env`](https://github.com/babel/babel-preset-env) that is automatically configured based on your `electron` version
-* Use of [`electron-builder`](https://github.com/electron-userland/electron-builder) to package and build a distributable electron application
+- Use of [`webpack-dev-server`](https://github.com/webpack/webpack-dev-server) for development
+- HMR for both `renderer` and `main` processes
+- Use of [`babel-preset-env`](https://github.com/babel/babel-preset-env) that is automatically configured based on your `electron` version
+- Use of [`electron-builder`](https://github.com/electron-userland/electron-builder) to package and build a distributable electron application
 
 Make sure to check out [`electron-webpack`'s documentation](https://webpack.electron.build/) for more details.
 
 ## Getting Started
+
 Simply clone down this repository, install dependencies, and get started on your application.
 
 The use of the [yarn](https://yarnpkg.com/) package manager is **strongly** recommended, as opposed to using `npm`.
