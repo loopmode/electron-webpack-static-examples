@@ -73,9 +73,19 @@ Have a look at this commit: https://github.com/loopmode/electron-webpack-static-
 It adds
 
 - webpack alias configuration
+  ```
+  resolve: {
+      alias: {
+        // for accessing static folder from inside stylesheets
+        static: path.resolve(__dirname, "static"),
+      },
+    }
+  ```
 - stylesheet that is bundled via webpack
-  - reference to static font via `~static` alias
-  - reference to static background image via `~static` alias
+  - reference to static font via `~static` alias  
+    `@font-face { /* ... */ src: url("~static/fonts/NotoMono-Regular-webfont.woff") format("woff"); /* ... */ `
+  - reference to static background image via `~static` alias  
+    `background: url("~static/carbon_fibre.png")`
 
 # electron-webpack-quick-start
 
