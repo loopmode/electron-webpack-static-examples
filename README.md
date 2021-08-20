@@ -4,13 +4,13 @@ Examples of how to include static files in [electron-webpack](https://github.com
 
 These examples cover some details that are not explained (yet) in [the docs](https://webpack.electron.build/using-static-assets), like the need to distinguish between development and production environment, or how to get the paths working in bundled vs static css/scss stylesheets.
 
-**In local development server:**
+**In local development server:**  
 ![Screenshot: development](./screenshot-dev.png) 
 
-**Production build, running the unpacked `/dist` application:**
+**Production build, running the unpacked `/dist` application:**  
 ![Screenshot: production dist](./screenshot-prod-dist.png) 
 
-**Production build, running the installed application:**
+**Production build, running the installed application:**  
 ![Screenshot: production installed](./screenshot-prod-installed.png) 
 
 ## `getStatic` utility
