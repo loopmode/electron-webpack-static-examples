@@ -44,7 +44,7 @@ The index file uses the `getStatic` helper to reference the static stylesheet `s
 Inside `static/theme.css` we import the file `static/fonts/roboto-fontfacekit/stylesheet.css`, but we can use regular relative paths from here on:
 
 ```css
-/* we're already inside the static folder, so we can use relative paths as usual */
+/* we're already inside a file loaded from the static folder, so we can use relative paths as usual */
 @import "./fonts/roboto-fontfacekit/stylesheet.css";
 ```
 
